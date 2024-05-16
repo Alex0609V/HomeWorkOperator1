@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        //тут пишем код и когда напишем, то пушим ветку в инет
+
     }
 }
