@@ -69,7 +69,7 @@ public class Main {
                 System.out.printf("Если возраст ребенка равен %s, то ему можно кататься на аттракционебез сопровождения взрослого\n", childAge);
             }
 
-            System.out.println("Задача 6"); // эту задачу я не понял были сложности!
+            System.out.println("Задача 6");
             int wagonСapacity = 102;
             int sedCapacity = 50;
             int stendCapacity = wagonСapacity - sedCapacity;
@@ -81,15 +81,35 @@ public class Main {
                         System.out.println("Можно ехать стоя!");
                     }
                     if (position > wagonСapacity) {
-                        System.out.println("Нет мест");
-                    }
+                        System.out.println("Нет мест усё!");
+
+
                         System.out.println("Задача 7");
 
-                    }
-                }
+                        int one = 1;
+                        int two = 2;
+                        int three = 3;
+
+                        if (one < two && three > one ) {
+                            System.out.println(" three больше всех");
+                        }
+                            if (two > one && two < three) {
+                                System.out.println(" two больше всех");
+                            }
+                                if (three > two && one < three) {
+                                    System.out.println("three больше всех");
+                                }
 
 
-            }
+
+                            }
+                        }
+                        }
+        }
+
+
+
+
 
 
 
