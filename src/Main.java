@@ -32,7 +32,7 @@ public class Main {
 
             System.out.println("Задача 4");
 
-            int person = 23;
+            int person = 17;
             if (person > 2 && person <= 6) {
 
                 System.out.printf("Если возраст человека равен %s то ему нужно ходить детский сад", person);
@@ -50,6 +50,7 @@ public class Main {
                 System.out.printf("Если возраст человека равен %s то ему нужно ходить в университет\n", person);
             }
 
+
             if (person > 24) {
                 System.out.printf("Если возраст человека равен %s то ему нужно ходить на работу\n", person);
 
@@ -57,52 +58,63 @@ public class Main {
             System.out.println("Задача 5");
 
             int childAge = 14;
+            boolean conductiveAdult = childAge > 5 && childAge <= 14;
             if (childAge < 5) {
                 System.out.printf("Если возраст ребенка равен %s, то ему нельзя кататься на аттракционе\n", childAge);
-            }
-            if (childAge > 5 && childAge <= 14) {
-                System.out.printf("Если возраст ребенка равен %s, то ему можно кататься на аттракционе только в сопровождении взрослого,если взрослого нет, то кататься нельзя \n", childAge);
-            }
-            if (childAge > 14) {
-                System.out.printf("Если возраст ребенка равен %s, то ему можно кататься на аттракционебез сопровождения взрослого\n", childAge);
-            }
+            } else { if (conductiveAdult) {
 
-            System.out.println("Задача 6");
-            int wagonСapacity = 102;
-            int sedCapacity = 60;
-            int stendCapacity = wagonСapacity - sedCapacity;
-            int position = 170;
-            if (position <= sedCapacity) {
-                System.out.println("Можно сидеть!");
-            }
-            if (position > sedCapacity && position <= wagonСapacity) {
-                System.out.println("Можно ехать стоя!");
-            }
-            if (position > wagonСapacity) {
-                System.out.println("Нет мест усё!");
-
-
-                System.out.println("Задача 7");
-
-                int minute = 1;
-                int second = 2;
-                int hour = 2;
-
-                if (minute > second && minute > hour) {
-
-                    System.out.println(" minute больше всех");
                 }
-                    if (second > minute && second > minute) {
-                        System.out.println("second Больше всех");
-                    }
-                    if (hour > second && minute > minute) {
-                        System.out.println("hour Больше всех");
-                    }
+                if (childAge > 5 && childAge <= 14) {
+                    System.out.printf("Если возраст ребенка равен %s, то ему можно кататься на аттракционе только в сопровождении взрослого,если взрослого нет, то кататься нельзя \n", childAge);
+                }
+                if (childAge > 14) {
+                    System.out.printf("Если возраст ребенка равен %s, то ему можно кататься на аттракционе без сопровождения взрослого\n", childAge);
                 }
 
+                System.out.println("Задача 6");
+                int wagonСapacity = 102;
+                int sedCapacity = 60;
+                int stendCapacity = wagonСapacity - sedCapacity;
+                int position = 170;
+                if (position <= sedCapacity) {
+                    System.out.println("Можно сидеть!");
+                }
+                if (position > sedCapacity && position <= wagonСapacity) {
+                    System.out.println("Можно ехать стоя!");
+                }
+                if (position > wagonСapacity) {
+                    System.out.println("Нет мест усё!");
+
+
+                    System.out.println("Задача 7");
+
+                    int one = 1;
+                    int two = 2;
+                    int three = 3;
+
+                    if (one > two && one < three) {
+                        System.out.println("Первое число самое большое " + one);
+
+                    } else if (two > three) {
+                        System.out.println("Второе число самое большое " + two);
+                    } else {
+                        System.out.println("Третье число самое большое " + three);
+                    }
+                }
             }
         }
     }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
