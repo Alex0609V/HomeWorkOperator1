@@ -55,14 +55,12 @@ public class Main {
 
             }
             System.out.println("Задача 5");
-            //Если ребенку меньше 5 лет, то он не может кататься на аттракционе.
-            // Если ребенку больше 5, но меньше 14 лет, то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.
-            // Если ребенок старше 14 лет, то он может кататься без сопровождения взрослого
-            int childAge = 15;
+
+            int childAge = 14;
             if (childAge < 5) {
                 System.out.printf("Если возраст ребенка равен %s, то ему нельзя кататься на аттракционе\n", childAge);
             }
-            if (childAge > 5 && childAge < 14) {
+            if (childAge > 5 && childAge <= 14) {
                 System.out.printf("Если возраст ребенка равен %s, то ему можно кататься на аттракционе только в сопровождении взрослого,если взрослого нет, то кататься нельзя \n", childAge);
             }
             if (childAge > 14) {
@@ -86,18 +84,31 @@ public class Main {
 
                 System.out.println("Задача 7");
 
-                int one = 1;
-                int two = 2;
-                int three = 3;
+                int minute = 1;
+                int second = 2;
+                int hour = 2;
 
-                if (one < two && three > two ) {
-                    System.out.println(" three больше всех");
+                if (minute > second && minute > hour) {
 
-                        }
+                    System.out.println(" minute больше всех");
+                }
+                    if (second > minute && second > minute) {
+                        System.out.println("second Больше всех");
+                    }
+                    if (hour > second && minute > minute) {
+                        System.out.println("hour Больше всех");
                     }
                 }
+
             }
         }
+    }
+
+
+
+
+
+
 
 
 
