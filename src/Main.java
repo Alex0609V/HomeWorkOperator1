@@ -9,8 +9,8 @@ public class Main {
 
             System.out.println("Задача 2");
 
-            int temperature = 4;
-            if (temperature <= 5) {
+            int temperature = 5;
+            if (temperature < 5) {
 
                 System.out.printf("На улице холодно  нужно надеть шапку");
             } else {
@@ -39,7 +39,7 @@ public class Main {
             }
 
 
-            if (person > 7 && person <= 17) {
+            if (person >= 7 && person <= 17) {
 
 
                 System.out.printf("Если возраст человека равен %s то ему нужно ходить в школу\n", person);
@@ -62,8 +62,8 @@ public class Main {
             if (childAge < 5) {
                 System.out.printf("Если возраст ребенка равен %s, то ему нельзя кататься на аттракционе\n", childAge);
             }
-            if (childAge > 5 && childAge <= 14) {
-                System.out.printf("Если возраст ребенка равен %s, то ему можно кататься на аттракционе\n", childAge);
+            if (childAge > 5 && childAge < 14) {
+                System.out.printf("Если возраст ребенка равен %s, то ему можно кататься на аттракционе только в сопровождении взрослого,если взрослого нет, то кататься нельзя \n", childAge);
             }
             if (childAge > 14) {
                 System.out.printf("Если возраст ребенка равен %s, то ему можно кататься на аттракционебез сопровождения взрослого\n", childAge);
@@ -71,41 +71,43 @@ public class Main {
 
             System.out.println("Задача 6");
             int wagonСapacity = 102;
-            int sedCapacity = 50;
+            int sedCapacity = 60;
             int stendCapacity = wagonСapacity - sedCapacity;
-            int position = 200;
+            int position = 170;
             if (position <= sedCapacity) {
-                    System.out.println("Можно сидеть!");
-                }
-                if (position > sedCapacity && position <= wagonСapacity) {
-                        System.out.println("Можно ехать стоя!");
+                System.out.println("Можно сидеть!");
+            }
+            if (position > sedCapacity && position <= wagonСapacity) {
+                System.out.println("Можно ехать стоя!");
+            }
+            if (position > wagonСapacity) {
+                System.out.println("Нет мест усё!");
+
+
+                System.out.println("Задача 7");
+
+                int one = 1;
+                int two = 2;
+                int three = 3;
+
+                if (one < two && three > two ) {
+                    System.out.println(" three больше всех");
+
+                        }
                     }
-                    if (position > wagonСapacity) {
-                        System.out.println("Нет мест усё!");
-
-
-                        System.out.println("Задача 7");
-
-                        int one = 1;
-                        int two = 2;
-                        int three = 3;
-
-                        if (one < two && three > one ) {
-                            System.out.println(" three больше всех");
-                        }
-                            if (two > one && two < three) {
-                                System.out.println(" two больше всех");
-                            }
-                                if (three > two && one < three) {
-                                    System.out.println("three больше всех");
-                                }
-
-
-
-                            }
-                        }
-                        }
+                }
+            }
         }
+
+
+
+
+
+
+
+
+
+
 
 
 
